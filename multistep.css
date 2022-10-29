@@ -1,0 +1,251 @@
+/* Font Google - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+*,
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #DAE6FC;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Override Bootstrap */
+a {
+    text-decoration: none;
+    color: #4781F1;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    box-shadow: none !important;
+}
+
+input::placeholder {
+    color: #a7b4c0 !important;
+    font-style: italic !important;
+}
+
+input:focus::placeholder {
+    font-style: normal !important;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.btn-primary,
+input[type="checkbox"]:checked,
+input[type="checkbox"]:valid:checked,
+input[type="checkbox"].is-valid:checked {
+    background-color: #4781F1;
+    border-color: #4781F1;
+}
+
+.btn-primary:hover {
+    background-color: #4781F1;
+    border-color: #4781F1;
+}
+
+.btn-outline-primary {
+    color: #4781F1;
+    border-color: #4781F1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4781F1;
+    border-color: #4781F1;
+}
+
+/* Select2 */
+.select2-container .select2-selection--single {
+    height: 38px !important;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 38px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+    height: 38px !important;
+    width: 28px !important;
+}
+
+/* Form Input - Has Icon & Toggle Password + Override Form Control */
+.has-icon {
+    position: relative;
+}
+
+.has-icon .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-icon .icon-control {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    font-size: 1.15rem;
+    color: #6E8396;
+}
+
+.has-icon .toggle-password {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    text-align: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    font-size: 1.15rem;
+    top: 1.5rem;
+    right: 0.25rem;
+    cursor: pointer;
+    color: #6E8396;
+}
+
+.was-validated .form-check-input:valid, .form-check-input.is-valid, .was-validated .form-control:valid, .form-control.is-valid, .was-validated .form-check-input:valid~.form-check-label, .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:invalid, .form-check-input.is-invalid, .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .form-check-input:invalid~.form-check-label, .form-check-input.is-invalid~.form-check-label {
+    color: #212529;
+    border-color: #ced4da;
+}
+
+.was-validated .toggle-on:invalid~.toggle-password, .toggle-on.is-invalid~.toggle-password, .was-validated .toggle-on:valid~.toggle-password, .toggle-on.is-valid~.toggle-password {
+    padding-right: 3.25rem;
+}
+
+.was-validated .toggle-on:valid, .toggle-on.is-valid, .was-validated .toggle-on:invalid, .toggle-on.is-invalid {
+    padding-right: 3.5rem !important;
+}
+
+#vendor_form .select2-container .select2-search--inline {
+    float: unset;
+}
+
+#vendor_form ul.select2-selection__rendered {
+    overflow: unset !important;
+    padding-bottom: 5px !important;
+    white-space: unset !important;
+}
+
+.step-row {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.progress-step {
+    position: absolute;
+    height: 100%;
+    width: 33%;
+}
+
+[class*="step-col-"] {
+    width: 33%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+[class*="step-col-"]:not(:last-child)::after {
+    content: "❯";
+    margin-left: auto;
+    font-size: 1;
+    color: #A8B4Bf;
+}
+
+[class*="step-col-"] img {
+    width: 2.5rem;
+    padding: 0.25rem;
+    background: #F1F3F5;
+    border-radius: .5rem;
+}
+
+[class*="step-col-"] .step-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+    color: #6E8396;
+}
+
+[class*="step-col-"] .step-info strong {
+    font-weight: 500;
+}
+
+[class*="step-col-"] .step-info small {
+    color: #6E8396 !important;
+}
+
+[class*="step-col-"].filled {
+    background: #F1F3F5;
+}
+
+.step-col-1 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+[class*="step-col-"].active {
+    background: #F1F3F5;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+[class*="step-col-"].active img {
+    background: #B5CDF9;
+}
+
+[class*="step-col-"].filled img {
+    background: #4781F1;
+}
+
+[class*="step-col-"].filled .step-info {
+    color: #4781F1;
+}
+
+[class*="step-col-"].active .step-info {
+    color: #0D6EFD;
+}
+
+@media only screen and (max-width: 576px) {
+    .text-title {
+        font-size: 1.5rem !important;
+    }
+
+    .step-row {
+        flex-direction: column;
+    }
+
+    .progress-step {
+        width: 100%;
+    }
+
+    [class*="step-col-"] {
+        width: 100%;
+        padding: 1rem;
+        display: none;
+    }
+
+    [class*="step-col-"].active {
+        display: flex;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+}
